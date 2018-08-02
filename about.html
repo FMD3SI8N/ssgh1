@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>about.html</title>
+	<meta charset="utf-8">
+	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<img src="img/beach-sherkin2.png">
+	</header>
+	<nav>
+		<div class="nav"><a href="index.html">HOME</a></div>
+		<div class="nav"><a href="about.html">ABOUT</a></div>
+		<div class="nav"><a href="gallery.html">GALLERY</a></div>
+		<div class="nav"><a href="contact.html">CONTACT</a></div>
+	</nav>
+	<div class="weather">
+		<h1>TODAY'S WEATHER</h1>
+		<div id="info"></div>
+	</div>
+	<script src="js/weatherWithIcon.js"></script>
+	<script src="http://api.openweathermap.org/data/2.5/weather?q=Baltimore,IE&units=metric&APPID=b50cc59a7bf4015a417b8e8641cdf84f&callback=cat"></script>
+	<div class="sherkin">
+		<h1>WHAT IS SHERKIN ISLAND?</h1>
+		<p>
+			Sherkin Island is approximately 3 miles long with a population of about 100, and lies off the southwest coast of Ireland. Sherkin Island, which is the ancestral home of the O’Driscoll clan, is the most accessible island in Ireland – only ten minutes by ferry from the small fishing port of Baltimore, Co.Cork. The island boasts a wonderful array of landscapes, Atlantic views from the hilltops, fuchsia-scented lanes and the finest sandy beaches.
+		</p>
+	</div>
+	<div class="business">
+		<h1>A LITTLE ABOUT OURSELVES?</h1>
+		<p>
+			We are a family-run guesthouse that have lived on Sherkin Island for most of our lives. We set up this business with one goal in mind, we love the island and we want you to experience that for yourselves. Sherkin Island has something for everyone, come have an experience you'll never forget.  
+		</p>
+	</div>
+	<div class="map">
+		<h1>MAP</h1>
+		<img src="img/Sherkin_map_2017.png">
+	</div>
+	<footer>Silver Strand Guesthouse, Sherkin Island, Co. Cork. Designed by FMD3S1GN</footer>
+	
+	<!--<script type="text/javascript">
+		$.get("http://api.openweathermap.org/data/2.5/weather?q=Baltimore,IE&APPID=b50cc59a7bf4015a417b8e8641cdf84f&callback=cat" , function(data){
+				var json = JSON.decode(data)
+		});
+	</script>-->
+</div>
+</body>
+</html>

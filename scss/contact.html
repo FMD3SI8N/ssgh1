@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>contact.html</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<div class="wrapper">
+	<header>
+		<img src="img/beach-sherkin2.png">
+	</header>
+	<nav>
+		<div class="nav" class="HOME"><a href="index.html">HOME</a></div>
+		<div class="nav" class="ABOUT"><a href="about.html">ABOUT</a></div>
+		<div class="nav" class="GALLERY"><a href="gallery.html">GALLERY</a></div>
+		<div class="nav" class="CONTACT"><a href="contact.html">CONTACT</a></div>
+	</nav>
+	<p>"Have you got a query, you want answered by e-mail? Submit an e-mail through our contact form and we'll get back to you as soon as we can!"</p>
+	<form name="contact_form" method="post" action="php/send_form_email.php">
+		<fieldset name="contact_form">
+			<legend>CONTACT FORM</legend>
+			Name:<br/><input type="text" name="name"><br/>
+			Email:<br/><input type="email" name="email" pattern="^.+@.+$"><br/>
+			Message:<br/><input type="text" name="message"><br/>
+			<button type="submit">SUBMIT</button>
+		</fieldset>
+	</form>
+	<footer>Silver Strand Guesthouse, Sherkin Island, Co. Cork. Designed by FMD3S1GN</footer>
+	</div>
+</body>
+</html>

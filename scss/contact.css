@@ -1,0 +1,115 @@
+/*grid layout*/
+.wrapper{
+	padding-top:2%;
+	padding-bottom:2%;
+	width:90%;
+	background-image:url("backgroundimage.jpg");
+	margin-left:5%;
+	margin-right:5%;
+	display:inline-grid;
+	grid-template-rows:15% 15% 15% 15% 15% 15%;
+	grid-template-areas:
+	"H H H H H H"
+	"N N N N N N"
+	"P P P P P P"
+	"C C C C C C"
+	"C C C C C C"
+	"F F F F F F";
+}
+header{
+	grid-area:H;
+	padding-bottom:60px;
+}
+nav{
+	grid-area:N;
+	padding-bottom:50px;
+	color:red;
+	font-size:2em;
+}
+p{
+	grid-area:P;
+	margin-top:25px;
+	margin-bottom:25px;
+	color:red;
+	font-size:3em;
+	text-align:center;
+}
+form{
+	grid-area:C;
+	margin-top:50px;
+}
+footer{
+	grid-area:F;
+	text-align:center;
+	color:red;
+	margin-top:50px;
+}
+/*flex layout*/
+header{
+	display:flex;
+	justify-content:center;
+}
+nav{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-around;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+	margin-bottom:25px;
+}
+form{
+	display:flex;
+	justify-content:center;
+	margin-bottom:50px;
+}
+.nav{
+	border:solid 1px blue;
+	/*padding-left:162.5px;
+	padding-right:162.5px;*/
+	width:25%;
+	text-align:center;
+	background-color:silver;
+}
+fieldset{
+	color:red;
+	padding:60px 40px 60px 40px;
+	background-color:white;
+	border:solid red 3px;
+}
+input, button{
+	margin:50px 15px 50px 15px;
+	font-size:1em;
+}
+legend{
+	border:solid red 1px;
+	background-color:red;
+	color:white;
+}
+fieldset{
+	font-size:2em;
+}
+button{
+	color:red;
+}
+header, nav, .price, aside{
+	box-sizing:border-box;
+	box-shadow: 5px silver;
+}
+a:link{
+	text-decoration:none;
+}
+a:active{
+	font:bolder;
+}
+nav a:hover{
+	color:blue;
+}
+nav a:visited{
+	color:blue;
+}
+.nav:hover{
+	background-color:white;
+}
+.aside2 a:hover{
+	background-color:white;
+}

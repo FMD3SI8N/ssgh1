@@ -1,0 +1,108 @@
+/*grid layout*/
+.wrapper{
+	padding-top:2%;
+	padding-bottom:2%;
+	width:90%;
+	background-image:url("backgroundimage.jpg");
+	margin-left:5%;
+	margin-right:5%;
+	display:inline-grid;
+	grid-template-rows:15% 15% 15% 15% 15% 15%;
+	grid-template-areas:
+	"H H H H H H"
+	"N N N N N N"
+	"W W W W W W"
+	"S S S S S S"
+	"A A A A A A"
+	"M M M M M M"
+	"F F F F F F";
+}
+header{
+	grid-area:H;
+	padding-bottom:60px;
+}
+nav{
+	grid-area:N;
+	padding-bottom:30px;
+	color:red;
+	font-size:2em;
+}
+.weather{
+	grid-area:W;
+	text-align:center;
+	font-size:1.5em;
+	color:red;
+}
+.sherkin{
+	grid-area:S;
+	text-align:center;
+	color:red;
+	font-size:1.5em;
+}
+h1{
+	color:red;
+}
+p{
+	font-size:1.5em;
+	color:red;
+}
+.business{
+	grid-area:A;
+	text-align:center;
+	color:red;
+	font-size:1.5em;
+}
+.map{
+	grid-area:M;
+	font-size:1.5em;
+	text-align:center;
+	color:red;
+}
+footer{
+	margin-top:30px;
+	grid-area:F;
+	text-align:center;
+	color:red;
+}
+/*flex layout*/
+header{
+	display:flex;
+	justify-content:center;
+}
+nav{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-around;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+}
+.nav{
+	border:solid 1px blue;
+	/*padding-left:162.5px;
+	padding-right:162.5px;*/
+	width:25%;
+	text-align:center;
+	background-color:silver;
+}
+header, nav, .price, aside{
+	box-sizing:border-box;
+	box-shadow: 5px silver;
+}
+a:link{
+	text-decoration:none;
+}
+a:active{
+	font:bolder;
+}
+nav a:hover{
+	color:blue;
+}
+nav a:visited{
+	color:blue;
+}
+.nav:hover{
+	background-color:white;
+}
+.aside2 a:hover{
+	background-color:white;
+}

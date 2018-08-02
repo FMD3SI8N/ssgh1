@@ -1,0 +1,269 @@
+/*grid layout*/
+.wrapper{
+	padding-top:2%;
+	padding-bottom:2%;
+	width:90%;
+	background-image:url("backgroundimage.jpg");
+	margin-left:5%;
+	margin-right:5%;
+	display:inline-grid;
+	grid-template-rows:15% 15% 15% 15% 15% 15%;
+	grid-template-areas:
+	"H H H H H H"
+	"N N N N N N"
+	"P P P P P S1"
+	"P P P P P S2"
+	"C C C C C C"
+	"L L L L L L"
+	"L L L L L L"
+	"F F F F F F";
+}
+header{
+	grid-area:H;
+	padding-bottom:60px;
+}
+nav{
+	grid-area:N;
+	font-size:2em;
+	color:red;
+}
+/*.HOME{
+	grid-area:I;
+}
+.ABOUT{
+	grid-area:II;
+	width:30%;
+}
+.CONTACT{
+	grid-area:III;
+	width:30%;
+}*/
+.aside, .aside2{
+	padding:1 1 1 1;
+}
+.aside{
+	grid-area:S1;
+	border:solid 1px blue;
+	background-color:silver;
+	color:red;
+	margin-right:10%;
+	margin-top:60px;
+	font-size:2em;
+	text-align:center;
+}
+.aside2{
+	grid-area:S2;
+	border:solid 1px blue;
+	background-color:silver;
+	color:red;
+	margin-right:10%;
+	margin-top:60px;
+	font-size:2em;
+	text-align:center;
+}
+.price{
+	margin-top:60px;
+	grid-area:P;
+	margin-left:10%;
+}
+.seashell{
+	grid-area:C;
+	text-align:center;
+	margin-top:60px;
+}
+.list{
+	font-size:2em;
+	font:italics;
+	text-align:center;
+	grid-area:L;
+	color:red;
+}
+footer{
+	margin-top:60px;
+	grid-area:F;
+	text-align:center;
+	color:red;
+}
+h1{
+	font-size:1.5em;
+}
+/*flex layout*/
+header{
+	display:flex;
+	justify-content:center;
+}
+nav{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-around;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+}
+.nav{
+	border:solid 1px blue;
+	/*padding-left:162.5px;
+	padding-right:162.5px;*/
+	width:25%;
+	text-align:center;
+	background-color:silver;
+}
+header, nav, .price, aside{
+	box-shadow: 1px silver;
+}
+/*.HOME{
+	justify-content:left;
+}
+.ABOUT{
+	justify-content:center;
+}
+.CONTACT{
+	justify-content:right;
+}*/
+@media (max-width:1200px){
+	.wrapper{
+	padding-top:2%;
+	padding-bottom:2%;
+	width:90%;
+	background-image:url("backgroundimage.jpg");
+	margin-left:5%;
+	margin-right:5%;
+	display:inline-grid;
+	grid-template-rows:15% 15% 15% 15% 15% 15%;
+	grid-template-areas:
+	"H H H H H H"
+	"N N N N N N"
+	"P P P P P P"
+	"P P P P P P"
+	"S1 S1 S1 S2 S2 S2"
+	"S1 S1 S1 S2 S2 S2"
+	"C C C C C C"
+	"L L L L L L"
+	"L L L L L L"
+	"F F F F F F";
+}
+header{
+	grid-area:H;
+	padding-bottom:60px;
+}
+nav{
+	grid-area:N;
+	font-size:2em;
+}
+/*.HOME{
+	grid-area:I;
+}
+.ABOUT{
+	grid-area:II;
+	width:30%;
+}
+.CONTACT{
+	grid-area:III;
+	width:30%;
+}*/
+.aside, .aside2{
+	padding:1 1 1 1;
+}
+.aside{
+	grid-area:S1;
+	border:solid 1px blue;
+	background-color:silver;
+	color:red;
+	/*margin-right:10%;*/
+	margin-top:60px;
+	font-size:2em;
+}
+.aside2{
+	grid-area:S2;
+	border:solid 1px blue;
+	background-color:silver;
+	color:red;
+	/*margin-left:0px;
+	*/margin-right:0px;/*
+	margin-right:10%;*/
+	margin-top:60px;
+	font-size:2em;
+}
+.price{
+	margin-top:60px;
+	grid-area:P;
+	text-align:center;
+	margin-left:0px;
+	/*margin-left:10%;*/
+}
+.seashell{
+	grid-area:C;
+	text-align:center;
+	margin-top:60px;
+}
+.list{
+	font-size:2em;
+	font:italics;
+	text-align:center;
+	grid-area:L;
+	color:red;
+}
+footer{
+	margin-top:60px;
+	grid-area:F;
+	text-align:center;
+	color:red;
+}
+h1{
+	font-size:1.5em;
+}
+/*flex layout*/
+header{
+	display:flex;
+	justify-content:center;
+}
+nav{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-around;
+	/*padding-top:10px;
+	padding-bottom:10px;*/
+}
+.price{
+	display:flex;
+	justify-content:center;
+}
+.nav{
+	box-sizing:border-box;
+	border:solid 1px blue;
+	/*padding-left:162.5px;
+	padding-right:162.5px;*/
+	width:33%;
+	text-align:center;
+	background-color:silver;
+}
+div{
+	box-sizing:border-box;
+	box-shadow: 5px silver;
+}
+}
+/*link styling*/
+.aside2 a:link{
+	color:green;
+}
+
+.aside2 a:visited{
+	color:green;
+}
+a:link{
+	text-decoration:none;
+}
+a:active{
+	font:bolder;
+}
+nav a:hover{
+	color:blue;
+}
+nav a:visited{
+	color:blue;
+}
+.nav:hover{
+	background-color:white;
+}
+.aside2 a:hover{
+	background-color:white;
+}
